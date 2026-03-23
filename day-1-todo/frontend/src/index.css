@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap');
+
+:root {
+  --page-bg: #03050a;
+  --surface-card: rgba(255, 255, 255, 0.04);
+  --card-bg: rgba(255, 255, 255, 0.06);
+  --input-bg: rgba(255, 255, 255, 0.05);
+  --border-muted: rgba(255, 255, 255, 0.12);
+  --accent: #64e0ff;
+  --delete-bg: #ff5f6d;
+  --edit-bg: #ff8c00;
+  --text-high: #f5f7fb;
+  --text-muted: rgba(245, 247, 251, 0.7);
+  --text-inverse: #0b0d14;
+  --toggle-bg: rgba(255, 255, 255, 0.1);
+  --toggle-dot: #64e0ff;
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+:root[data-theme='light'] {
+  --page-bg: #f4f4f6;
+  --surface-card: #ffffff;
+  --card-bg: #f8f8fb;
+  --input-bg: #fcfcff;
+  --border-muted: rgba(15, 23, 42, 0.12);
+  --accent: #2c8dff;
+  --delete-bg: #ff4d4f;
+  --text-high: #101423;
+  --text-muted: rgba(16, 20, 35, 0.65);
+  --text-inverse: #ffffff;
+  --toggle-bg: rgba(16, 20, 35, 0.1);
+  --toggle-dot: #2c8dff;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--page-bg);
+  color: var(--text-high);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+#root {
+  width: 100%;
+}
+
+button {
+  font-family: inherit;
+}

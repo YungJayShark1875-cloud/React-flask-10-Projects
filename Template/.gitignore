@@ -1,0 +1,11 @@
+vflask/
+__pycache__/
+*.pyc
+
+instance/
+.env
+
+node_modules/
+build/
+
+.vscode/
