@@ -11,7 +11,7 @@ class Notes(db.Model):
     
     def to_json(self):
         return {
-            "id": self.id, 
+            "id": self.id,  
             "title": self.title, 
             "content": self.content, 
             "date": self.date
